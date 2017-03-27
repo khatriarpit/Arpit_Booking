@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    <!--.main {width: 1170px;padding: 0 15px 0 15px;margin-right: auto;margin-left: auto;}
+    .header-section .header-content .header-left-content{float: left; width: 70%}
+    .header-section .header-content .header-right-content{float: left; width: 30%}
+    .header-section .header-content .header-left-content .head-line a{ color:#000; font-weight:800; font-size: 25px; text-transform: uppercase; text-decoration: underline;}
+    .header-section .header-content .header-left-content .head-line{text-align: left;}
+    .header-section .header-content .header-left-content .head-line span{text-align: left; text-transform: uppercase; margin: 10px 0 0 0; position: absolute;}
+    .header-right-content img{width: 200px}
+    .header-content{height: 143px;}
+
+    /*css for inner content*/
+    .inner-content .inner-left-content{float: left; width: 50%;}
+    .inner-content .inner-left-content span{ font-size: 18px; margin-bottom: 10px; position: relative; line-height: 2 }
+    .inner-content .inner-right-content span{ font-size: 18px; margin-bottom: 10px; position: relative; line-height: 2;text-align: right;}
+    .inner-content .inner-right-content{float: right; width: 50%; text-align: right;}
+
+    /*css for table*/
+    th{ padding:30px 10px;}
+    td{ padding:20px 10px;}
+    .total-txt{font-size: 24px; text-align: right;}
+    .right1{font-size: 24px;}
+-->
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <section class="header-section">
+        <div class="header-content">
+            <div class="header-left-content" style="float: left; width: 70%">
+                <div class="head-line">
+                    <a href="">${companyName}</a>
+                    <br></br>
+                    <span>${address1}&nbsp;&nbsp;${address2}&nbsp;&nbsp;${address3}</span><br></br>
+                    <span>mo. ${phoneNo}</span><br></br>
+                    <span>ph. ${landlineNo}</span><br></br>
+                    <span>Email : ${emailid}</span><br></br>
+                </div>
+            </div>
+            <div class="header-right-content" style="float: left; width: 30%">
+                <!--<img src="http://www.clipartbest.com/cliparts/Kcn/Xqy/KcnXqyBKi.png">-->
+                <img src="${imgFile}" style="width:200px; height:150px"/>
+            </div>
+        </div>
+    </section>
+    <hr></hr>
+    <section class="inner-content">
+        <div class="inner-left-content">
+            <span>S.TAX ${ServiceTax}</span><br></br>
+            <span>INVOICE NO. ${InvoiceNumber}</span><br></br>
+            <span>TO,</span>
+        </div>
+        <div class="inner-right-content">
+            <span>&nbsp;</span><br></br>
+            <span>DATE : ${dateOfInvoice}</span><br></br>
+            <span>&nbsp;</span>
+        </div>
+        <table cellspacing="0" border="1px solid #434343" style="width:100%" text-align="center">
+            <tr>
+                <th colspan="2">PASSENGER'S NAME</th>
+                <th>DATE OF TRAVEL</th>
+                <th>PLACE OF TOUR</th>
+                <th>K.M./DAY</th>
+                <th>RATE PER K.M</th>
+                <th>AMOUNT</th>
+            </tr>
+            <tr>
+                <td colspan="2">${PassengerName}</td>
+                <td>${DateOfTravel}</td>
+                <td>${PlaceOfTour}</td>
+                <td>${KM}</td>
+                <td>${RatePerKM}</td>
+                <td>${Amount}</td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <td colspan="6">TOLL TAX & PARKING CHARGES</td>
+                <td>${TollTax}</td>
+            </tr>
+            <tr>
+                <td colspan="6">DRIVER ALLOWANCE</td>
+                <td>${DriverAllowance}</td>
+            </tr>
+            <tr>
+                <td colspan="5">RUPEES: ${finalTotalInWord}</td>
+                <td>TOTAL</td>
+                <td>${finalTotal}</td>
+            </tr>
+            <tr>
+                <td colspan="5">NOTE: ${note}</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="total-txt">TOTAL AMOUNT DUE</td>
+                <td colspan="2">${totalAmountDue}</td>
+            </tr>
+        </table>
+
+        <table callspacing="0" cellpadding="0" style="width:100%">
+            <tr border-left="0" border-right="0">
+                <td colspan="4">
+                    TERMS & CONDITIONS:<br></br>
+                    ${termsConditions}
+
+                </td>
+                <td colspan="3">
+                    <h3>For, ${companyName}</h3>
+                    <br></br><br></br><br></br>
+                    Authorized Signatory.
+                </td>
+            </tr>
+
+        </table>
+    </section>
+</div>
+</body>
+</html>

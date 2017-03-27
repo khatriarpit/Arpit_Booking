@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dms.iml" filepath="$PROJECT_DIR$/dms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dms-core/dms-core.iml" filepath="$PROJECT_DIR$/dms-core/dms-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dms-core-model/dms-core-model.iml" filepath="$PROJECT_DIR$/dms-core-model/dms-core-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dms-core-modules/dms-core-modules.iml" filepath="$PROJECT_DIR$/dms-core-modules/dms-core-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dms-portal/dms-portal.iml" filepath="$PROJECT_DIR$/dms-portal/dms-portal.iml" />
+    </modules>
+  </component>
+</project>

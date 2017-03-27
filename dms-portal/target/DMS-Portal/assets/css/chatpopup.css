@@ -1,0 +1,130 @@
+#notification {
+	position: absolute;
+	top: 41px;
+	right: 25%;
+	width: 50px;
+	z-index: 10000;
+	height: 40px;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	/* background-color:#080b41; */
+	padding: 5px;
+	cursor: pointer;
+	right: 36%;
+}
+
+#notification span.dismiss {
+	border: 2px solid #FFF;
+	padding: 0 5px;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+#notification a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.disp_not {
+	padding: 10px;
+	color: #555 !important;
+	width: 100%;
+	float: left;
+	border-bottom: solid 1px #ddd;
+}
+
+.disp_not:hover {
+	color: #000 !important;
+}
+
+.see_all_cls {
+	color: #2f4050 !important;
+}
+
+#notification a hover {
+	color: #006699;
+	text-decoration: none;
+	font-weight: bold
+}
+
+/*Notification Menu*/
+#notificationContainer {
+	background-color: #fff;
+	border: 1px solid rgba(100, 100, 100, .4);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	overflow: visible;
+	position: absolute;
+	top: 30px;
+	margin-left: -170px;
+	width: 300px;
+	z-index: 0;
+	display: none;
+	//
+	Enable
+	this
+	after
+	jquery
+	implementation
+}
+
+//
+Popup Arrow
+#notificationContainer:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	color: transparent;
+	border: 10px solid black;
+	border-color: transparent transparent white;
+	margin-top: -20px;
+	margin-left: 188px;
+}
+
+#notificationTitle {
+	font-weight: bold;
+	padding: 8px;
+	font-size: 13px;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 1000;
+	width: 300px;
+	border-bottom: 1px solid #dddddd;
+	color: #555;
+}
+
+#notificationsBody {
+	padding: 33px 0px 0px 0px !important;
+	min-height: 100px;
+	overflow-y: auto;
+}
+
+#notificationFooter {
+	background-color: #e9eaed;
+	text-align: center;
+	font-weight: bold;
+	padding: 8px;
+	font-size: 12px;
+	border-top: 1px solid #dddddd;
+}
+
+#notification_count {
+	padding: 3px 7px 3px 7px;
+	background: #cc0000;
+	color: #ffffff;
+	font-weight: bold;
+	margin-left: -12px;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	position: absolute;
+	margin-top: -8px;
+	font-size: 11px;
+}

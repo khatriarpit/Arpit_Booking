@@ -1,0 +1,63 @@
+DEBUG   2017-03-18 15:48:25,288 [http-nio-9090-exec-2] freemarker.cache  - Couldn't find template in cache for "dms.login.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 15:48:25,290 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:48:25,292 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en.ftl"): Not found
+DEBUG   2017-03-18 15:48:25,292 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login.ftl"): Not found
+DEBUG   2017-03-18 15:48:27,974 [http-nio-9090-exec-9] freemarker.cache  - Couldn't find template in cache for "error.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 15:48:27,983 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("error_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:48:27,984 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("error_en.ftl"): Not found
+DEBUG   2017-03-18 15:48:27,984 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("error.ftl"): Not found
+DEBUG   2017-03-18 15:48:35,927 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("error_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:48:35,928 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("error_en.ftl"): Not found
+DEBUG   2017-03-18 15:48:35,929 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("error.ftl"): Not found
+DEBUG   2017-03-18 15:48:35,929 [http-nio-9090-exec-4] freemarker.cache  - "error.ftl"("en_US", UTF-8, parsed) no source found.
+DEBUG   2017-03-18 15:48:36,171 [http-nio-9090-exec-7] freemarker.cache  - "error.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   2017-03-18 15:48:39,355 [http-nio-9090-exec-6] com.emxcel.dms.portal.controller.AuthenticationController  -  Debug log entry from log4j
+INFO    2017-03-18 15:48:39,355 [http-nio-9090-exec-6] com.emxcel.dms.portal.controller.AuthenticationController  - log entry from log4j
+ERROR   2017-03-18 15:48:39,355 [http-nio-9090-exec-6] com.emxcel.dms.portal.controller.AuthenticationController  -  Error log entry from log4j
+DEBUG   2017-03-18 15:48:39,388 [http-nio-9090-exec-6] freemarker.cache  - Couldn't find template in cache for "dms.index.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 15:48:39,388 [http-nio-9090-exec-6] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:48:39,389 [http-nio-9090-exec-6] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index_en.ftl"): Not found
+DEBUG   2017-03-18 15:48:39,389 [http-nio-9090-exec-6] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index.ftl"): Not found
+DEBUG   2017-03-18 15:48:40,627 [http-nio-9090-exec-8] freemarker.cache  - Couldn't find template in cache for "dms.dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 15:48:40,637 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:48:40,638 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en.ftl"): Not found
+DEBUG   2017-03-18 15:48:40,642 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard.ftl"): Not found
+DEBUG   2017-03-18 15:52:24,530 [http-nio-9090-exec-3] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:52:24,532 [http-nio-9090-exec-3] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en.ftl"): Not found
+DEBUG   2017-03-18 15:52:24,533 [http-nio-9090-exec-3] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login.ftl"): Not found
+DEBUG   2017-03-18 15:52:24,533 [http-nio-9090-exec-3] freemarker.cache  - "dms.login.ftl"("en_US", UTF-8, parsed) no source found.
+DEBUG   2017-03-18 15:59:29,612 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en_US.ftl"): Not found
+DEBUG   2017-03-18 15:59:29,613 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en.ftl"): Not found
+DEBUG   2017-03-18 15:59:29,613 [http-nio-9090-exec-4] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard.ftl"): Not found
+DEBUG   2017-03-18 15:59:29,613 [http-nio-9090-exec-4] freemarker.cache  - "dms.dashboard.ftl"("en_US", UTF-8, parsed) no source found.
+DEBUG   2017-03-18 16:02:30,251 [http-nio-9090-exec-5] freemarker.cache  - Couldn't find template in cache for "dms.login.ftl"("en_GB", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 16:02:30,253 [http-nio-9090-exec-5] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:02:30,253 [http-nio-9090-exec-5] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login_en.ftl"): Not found
+DEBUG   2017-03-18 16:02:30,254 [http-nio-9090-exec-5] freemarker.cache  - TemplateLoader.findTemplateSource("dms.login.ftl"): Not found
+DEBUG   2017-03-18 16:02:35,487 [http-nio-9090-exec-2] com.emxcel.dms.portal.controller.AuthenticationController  -  Debug log entry from log4j
+INFO    2017-03-18 16:02:35,487 [http-nio-9090-exec-2] com.emxcel.dms.portal.controller.AuthenticationController  - log entry from log4j
+ERROR   2017-03-18 16:02:35,487 [http-nio-9090-exec-2] com.emxcel.dms.portal.controller.AuthenticationController  -  Error log entry from log4j
+DEBUG   2017-03-18 16:02:35,495 [http-nio-9090-exec-2] freemarker.cache  - Couldn't find template in cache for "dms.index.ftl"("en_GB", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 16:02:35,495 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:02:35,496 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index_en.ftl"): Not found
+DEBUG   2017-03-18 16:02:35,497 [http-nio-9090-exec-2] freemarker.cache  - TemplateLoader.findTemplateSource("dms.index.ftl"): Not found
+DEBUG   2017-03-18 16:02:36,055 [http-nio-9090-exec-8] freemarker.cache  - Couldn't find template in cache for "dms.dashboard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 16:02:36,055 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:02:36,056 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard_en.ftl"): Not found
+DEBUG   2017-03-18 16:02:36,056 [http-nio-9090-exec-8] freemarker.cache  - TemplateLoader.findTemplateSource("dms.dashboard.ftl"): Not found
+DEBUG   2017-03-18 16:03:09,443 [http-nio-9090-exec-9] freemarker.cache  - Couldn't find template in cache for "dms.searchcar.ftl"("en_GB", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 16:03:09,443 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:03:09,444 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en.ftl"): Not found
+DEBUG   2017-03-18 16:03:09,444 [http-nio-9090-exec-9] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar.ftl"): Not found
+DEBUG   2017-03-18 16:03:15,355 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:03:15,355 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en.ftl"): Not found
+DEBUG   2017-03-18 16:03:15,356 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar.ftl"): Not found
+DEBUG   2017-03-18 16:03:15,356 [http-nio-9090-exec-10] freemarker.cache  - "dms.searchcar.ftl"("en_GB", UTF-8, parsed) no source found.
+DEBUG   2017-03-18 16:03:22,385 [http-nio-9090-exec-1] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:03:22,385 [http-nio-9090-exec-1] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar_en.ftl"): Not found
+DEBUG   2017-03-18 16:03:22,386 [http-nio-9090-exec-1] freemarker.cache  - TemplateLoader.findTemplateSource("dms.searchcar.ftl"): Not found
+DEBUG   2017-03-18 16:03:22,386 [http-nio-9090-exec-1] freemarker.cache  - "dms.searchcar.ftl"("en_GB", UTF-8, parsed) no source found.
+DEBUG   2017-03-18 16:03:31,965 [http-nio-9090-exec-10] freemarker.cache  - Couldn't find template in cache for "dms.addclient.ftl"("en_GB", UTF-8, parsed); will try to load it.
+DEBUG   2017-03-18 16:03:31,966 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.addclient_en_GB.ftl"): Not found
+DEBUG   2017-03-18 16:03:31,966 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.addclient_en.ftl"): Not found
+DEBUG   2017-03-18 16:03:31,967 [http-nio-9090-exec-10] freemarker.cache  - TemplateLoader.findTemplateSource("dms.addclient.ftl"): Not found

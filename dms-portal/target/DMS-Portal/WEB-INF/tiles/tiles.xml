@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Auth Module -->
+	<definition name="dms.usergroup" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/auth/user-group.jsp" />
+	</definition>
+
+	<definition name="dms.userpermission" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/auth/user-permission.jsp" />
+	</definition>
+
+	<definition name="dms.userrole" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/user-role.jsp" />
+	</definition>
+	<!-- End Auth Module -->
+
+	<!-- Templates -->
+	<definition name="layout.basic" template="/WEB-INF/tiles/layout/basic.jsp">
+		<put-attribute name="title" value="Desk Management System" />
+		<put-attribute name="fileinclude"
+			value="/WEB-INF/tiles/view/CommonPage/fileInclude.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/tiles/view/CommonPage/header.jsp" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/tiles/view/CommonPage/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/tiles/view/CommonPage/footer.jsp" />
+	</definition>
+
+	<definition name="layout.mainlayout" template="/WEB-INF/tiles/layout/mainlayout.jsp">
+		<put-attribute name="title" value="Desk Management System" />
+		<put-attribute name="fileinclude"
+			value="/WEB-INF/tiles/view/CommonPage/fileInclude.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/tiles/view/CommonPage/header.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Pages -->
+	<!-- Error Page -->
+	<definition name="dms.error" extends="layout.mainlayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/error.jsp" />
+	</definition>
+	<!-- Error Page -->
+
+	<definition name="dms.admin" extends="layout.mainlayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/login.jsp" />
+	</definition>
+
+	<definition name="dms.login" extends="layout.mainlayout">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/login.jsp" />
+	</definition>
+	
+	<definition name="dms.loadcash" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/loadcash.jsp" />
+	</definition>
+
+	<!-- super admin pages -->
+	<definition name="dms.generateTicket" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/ticketManagement/generateTicket.jsp" />
+	</definition>
+	
+	<definition name="dms.companytypelist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/companymaster/companytypelist.jsp" />
+	</definition>
+	<definition name="dms.viewTickets" extends="layout.basic">
+		<put-attribute name="body"
+					   value="/WEB-INF/tiles/view/ticketManagement/viewTickets.jsp" />
+		<!-- value="/WEB-INF/tiles/view/car/cartype.jsp" /> -->
+	</definition>
+	<definition name="dms.companytype" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/companymaster/companytype.jsp" />
+		<!-- value="/WEB-INF/tiles/view/car/cartype.jsp" /> -->
+	</definition>
+	<definition name="dms.packagelist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/packageMaster/package_master_list.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/packagelist.jsp" /> -->
+	</definition>
+	<definition name="dms.package" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/packageMaster/package_master.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/createpackagemaster.jsp" /> -->
+	</definition>
+	<definition name="dms.createpackage" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/tenantpackage/tenant_package.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/createpackage.jsp" /> -->
+	</definition>
+	
+	<definition name="dms.renewpackage" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/tenantpackage/renew-package.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/createpackage.jsp" /> -->
+	</definition>
+	
+	<definition name="dms.createpackagelist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/tenantpackage/tenant_package_list.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/createpackagelist.jsp" /> -->
+	</definition>
+
+	<definition name="dms.pendingverificationlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/pendingverificationlist.jsp" />
+	</definition>
+
+	<definition name="dms.pendingverification" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/pendingverification.jsp" />
+	</definition>
+
+	<definition name="site.product" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/addProduct.jsp" />
+	</definition>
+
+	<definition name="site.paymentmode" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/payment.jsp" />
+	</definition>
+
+	<definition name="dms.tenantlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/tenant/tenant_list.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/companylist.jsp" /> -->
+	</definition>
+
+	<definition name="dms.tenant" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/tenant/tenant.jsp" />
+		<!-- value="/WEB-INF/tiles/view/superadmin/company.jsp" /> -->
+	</definition>
+	<!-- booked car status pages -->
+	<definition name="dms.bookedcarstatus" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/bookedcarstatus.jsp" />
+	</definition>
+	<definition name="dms.bookedcarlisting" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/bookedcarlisting.jsp" />
+	</definition>
+	<definition name="dms.menualinvoice" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/invoice/manual_invoice.jsp" />
+	</definition>
+	<!-- booked car status pages -->
+
+	<definition name="dms.destinationmaster" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/destinationmaster.jsp" />
+	</definition>
+
+	<definition name="dms.listOfInvoicePackage" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/listinvoicepackage.jsp" />
+	</definition>
+
+	<definition name="dms.invoicePackage" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/invoicepackage.jsp" />
+	</definition>
+
+	<definition name="dms.rateOfContract" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/rateofcontract.jsp" />
+	</definition>
+
+	<definition name="dms.listRateOfContract" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/superadmin/listratecontract.jsp" />
+	</definition>
+
+	<!-- tax pages -->
+	<definition name="dms.taxcategory" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/tax/TaxCategory.jsp" />
+	</definition>
+
+	<definition name="dms.taxslab" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/tax/TaxSlab.jsp" />
+	</definition>
+	<!-- tax pages -->
+	<definition name="dms.userlogs" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/userlogs.jsp" />
+	</definition>
+
+	<!-- super admin pages -->
+
+	<!-- USER -->
+	<definition name="dms.seller" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/seller/sell-all-seller.jsp" />
+	</definition>
+	<definition name="dms.editseller" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/superadmin/editseller.jsp" />
+	</definition>
+	<definition name="dms.user" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/user.jsp" />
+	</definition>
+	<definition name="dms.userlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/userlist.jsp" />
+	</definition>
+
+	<definition name="dms.userlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/userlist.jsp" />
+	</definition>
+
+	<definition name="dms.userverification" extends="layout.mainlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/userverification.jsp" />
+	</definition>
+	<!-- End USER -->
+
+	<!-- Start Forgot Password -->
+	<definition name="dms.forget" extends="layout.mainlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/forgotPassword.jsp" />
+	</definition>
+
+	<definition name="dms.resendpassword" extends="layout.mainlayout">
+			<put-attribute name="body" value="/WEB-INF/tiles/view/user/resendpassword.jsp" />
+	</definition>
+	<!-- End Forgot Password -->
+
+	<!-- Start TERM CONDITIONS -->
+	<definition name="dms.termconditions" extends="layout.mainlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/termconditions.jsp" />
+	</definition>
+	<!-- End TERM CONDITIONS -->
+
+	<definition name="dms.changepassword" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/user/changePassword.jsp" />
+	</definition>
+	<definition name="dms.dashboard" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/user/dashboard.jsp" />
+	</definition>
+
+	<definition name="dms.changepasswordforde" extends="layout.basic">
+		<put-attribute name="body"
+					   value="/WEB-INF/tiles/view/user/changePasswordforde.jsp" />
+	</definition>
+
+	<definition name="dms.index" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/index.jsp" />
+	</definition>
+	<definition name="dms.cartypelist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/cartypelist.jsp" />
+	</definition>
+	<definition name="dms.cartypeform" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/cartype.jsp" />
+	</definition>
+	<definition name="dms.addcarname" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/carname.jsp" />
+	</definition>
+	<definition name="dms.carlocation" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/carlocation.jsp" />
+	</definition>
+	<definition name="dms.carnamelist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/carnamelist.jsp" />
+	</definition>
+	<definition name="dms.calender" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/calender.jsp" />
+	</definition>
+
+	<!-- Car -->
+	<definition name="dms.carlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/carlist.jsp" />
+	</definition>
+	<definition name="dms.car" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/car/car.jsp" />
+	</definition>
+	<!-- End Car -->
+	<!-- Driver -->
+	<definition name="dms.driver" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/driver/driver.jsp" />
+	</definition>
+	<definition name="dms.driverlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/driver/driverlist.jsp" />
+	</definition>
+	<definition name="site.changedriver" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/driver/changedriver.jsp" />
+	</definition>
+	<definition name="dms.cardriver" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/driver/CarDriver.jsp" />
+	</definition>
+	<!-- Driver -->
+	<!--Mapping -->
+	<definition name="dms.cardrivermapping" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/mapping/cardrivermapping.jsp" />
+	</definition>
+	<!--Mapping -->
+	<!--DE -->
+	<definition name="dms.searchcar" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/bookcar.jsp" />
+	</definition>
+	<definition name="dms.generate-invoice" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/generate-invoice.jsp" />
+	</definition>
+	<definition name="dms.addclient" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/car/client.jsp" />
+	</definition>
+
+	<definition name="dms.prebooking" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/prebooking.jsp" />
+	</definition>
+	<definition name="dms.listprebooking" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/listprebooking.jsp" />
+	</definition>
+	
+	<definition name="dms.customercancel" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/customercancelList.jsp" />
+	</definition>
+	<!-- DE -->
+
+	<!-- feedback -->
+	<definition name="dms.enterfeedback" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/feedback/enter_feedback.jsp" />
+	</definition>
+	<definition name="dms.feedback" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/feedback/feedback.jsp" />
+	</definition>
+	<definition name="dms.feedbackreport" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/feedback/feedbackreport.jsp" />
+	</definition>
+	<!-- End feedback -->
+
+	<!-- company-master -->
+	<definition name="dms.companymaster" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/companymaster/companymaster.jsp" />
+	</definition>
+	<definition name="dms.companymasterlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/companymaster/companymasterlist.jsp" />
+	</definition>
+	<!-- End company-master -->
+
+	<!-- Start Change Start End Trip -->
+	<definition name="dms.entertrip" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/tripdetail/enter_trip.jsp" />
+	</definition>
+	<definition name="dms.clientlist" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/tripdetail/clientlist.jsp" />
+	</definition>
+	<definition name="dms.end_trip" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/tripdetail/end_trip.jsp" />
+	</definition>
+	<definition name="dms.listcancelrequest" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/cancelrequestlist.jsp" />
+	</definition>
+	
+	<definition name="dms.driverrequestoperation" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/car/drivercancelrequest.jsp" />
+	</definition>
+	
+	<!-- End Change Start End Trip -->
+
+	<definition name="dms.changeRequest" extends="layout.basic">
+		<put-attribute name="body"
+			value="/WEB-INF/tiles/view/changeRequest/changeRequest.jsp" />
+	</definition>
+	<definition name="dms.openTicket" extends="layout.basic">
+		<put-attribute name="body"
+					   value="/WEB-INF/tiles/view/ticketManagement/openTicket.jsp" />
+	</definition>
+
+	<!--View Tickets for Ticket Query Handler -->
+	<definition name="dms.viewTicketsTicketHandler" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/viewTicketsTicketHandler.jsp" />
+	</definition>
+	
+	<definition name="dms.invoice-static" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/invoice/invoice_static.jsp" />
+	</definition>
+	<definition name="dms.invoice-static-list" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/invoice/invoice_static_list.jsp" />
+	</definition>
+
+
+	<definition name="dms.viewAssignmentHistory" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/viewAssignmentHistory.jsp" />
+	</definition>
+
+	<definition name="dms.addDepartmentType" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/addTicketDepartmentType.jsp" />
+	</definition>
+	<definition name="dms.viewDepartmentType" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/viewDepartmentType.jsp" />
+	</definition>
+
+
+
+	<!--Assigned Ticket Status -->
+	<definition name="dms.userTicketStatus" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/viewMyTickets.jsp" />
+	</definition>
+
+	<!-- Ticket timeline -->
+	<!--Assigned Ticket Status -->
+	<definition name="dms.ticketTimeline" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/ticketManagement/ticketTimeline.jsp" />
+	</definition>
+	
+	<!--Email Template -->
+	<definition name="dms.email-template" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/template/email-template.jsp" />
+	</definition>
+	<definition name="dms.email-template-list" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/template/email-template-list.jsp" />
+	</definition>
+
+	<!--SMS Template -->
+	<definition name="dms.sms-template" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/template/sms-template.jsp" />
+	</definition>
+	<definition name="dms.sms-template-list" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/tiles/view/template/sms-template-list.jsp" />
+	</definition>
+</tiles-definitions>
